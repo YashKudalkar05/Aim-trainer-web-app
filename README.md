@@ -6,7 +6,6 @@ A browser-based FPS aim training app integrated with Discord. Users invoke a Dis
 ## Web app Preview
 
 ![Landing Page](assets/landing_page.png)
-![Main Menu](assets/menu.png)
 
 
 ## Features
