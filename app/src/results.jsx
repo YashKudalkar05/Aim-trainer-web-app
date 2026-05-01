@@ -13,7 +13,7 @@ export default function Results({ stats, token, onTokenRefresh, onPlayAgain }) {
           setIsGuest(true);
           return;
         }
-        const res = await fetch("http://localhost:8000/api/session/", {
+        const res = await fetch("http://177.7.55.40:8000/api/session/", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ token, ...stats }),
@@ -26,7 +26,7 @@ export default function Results({ stats, token, onTokenRefresh, onPlayAgain }) {
         }
         setSubmitted(true);
 
-        const tokenRes = await fetch("http://localhost:8000/api/token/refresh/", {
+        const tokenRes = await fetch("http://177.7.55.40:8000/api/token/refresh/", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ old_token: token }),
