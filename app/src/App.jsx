@@ -42,7 +42,7 @@ export default function App() {
 
   useEffect(() => {
     if (token && token !== "guest") {
-      fetch(`http://127.0.0.1:8000/api/user/?token=${token}`)
+      fetch(`http://177.7.55.40:8000/api/user/?token=${token}`)
         .then(res => res.json())
         .then(data => {
           if (data.display_name) setUsername(data.display_name);
